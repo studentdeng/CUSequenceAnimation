@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/studentdeng/CUSequenceAnimation", :tag => s.version.to_s }
   s.source_files  = 'source', 'source/**/*.{h,m}'
+  s.requires_arc = true
 
   s.frameworks   = 'QuartzCore'
 
