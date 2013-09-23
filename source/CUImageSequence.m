@@ -21,9 +21,9 @@
     return self;
 }
 
-+ (CUImageSequence *)sequenceWithIdentify:(int)index
++ (CUImageSequence *)sequenceWithIdentify:(int)index andFileName:(NSString *)fileName
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"light" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];
     NSURL *fileURL = [NSURL fileURLWithPath:path];
     
     NSArray *list = [[NSArray alloc] initWithContentsOfURL:fileURL];

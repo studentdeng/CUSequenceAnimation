@@ -16,6 +16,6 @@
 @property (nonatomic, strong) NSArray *time;
 @property (nonatomic, assign) int rate;
 
-+ (CUImageSequence *)sequenceWithIdentify:(int)index;
++ (CUImageSequence *)sequenceWithIdentify:(int)index andFileName:(NSString *)fileName;
 
 @end
